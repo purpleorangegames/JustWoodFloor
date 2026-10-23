@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <DesignatorDropdownGroupDef>
+	<defName>Vanilla_Floor_JustWood</defName>
+  </DesignatorDropdownGroupDef>
+
+  <TerrainDef ParentName="WoodPlankBase">
+    <defName>WoodPlankFloorLight</defName>
+    <label>light wood floor</label>
+    <texturePath>Terrain/Surfaces/WoodFloorLight</texturePath>
+  </TerrainDef>
+  
+</Defs>

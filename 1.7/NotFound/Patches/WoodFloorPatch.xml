@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- puts the vanilla wood floor in the same build menu list as the light one -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]/designatorDropdown</xpath>
+      <value><designatorDropdown>Vanilla_Floor_JustWood</designatorDropdown></value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+      <value><designatorDropdown>Vanilla_Floor_JustWood</designatorDropdown></value>
+    </nomatch>
+  </Operation>
+</Patch>

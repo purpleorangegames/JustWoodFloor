@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <DesignatorDropdownGroupDef>
+    <defName>Vanilla_Floor_JustWood</defName>
+  </DesignatorDropdownGroupDef>
+
+  <!-- same as the vanilla wood floor, written out so it doesn't depend on a parent name added by a patch -->
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloorLight</defName>
+    <label>light wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Wood plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloorLight</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(108,78,55)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <costList>
+      <WoodLog>3</WoodLog>
+    </costList>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Vanilla_Floor_JustWood</designatorDropdown>
+    <uiOrder>2001</uiOrder>
+  </TerrainDef>
+
+</Defs>
